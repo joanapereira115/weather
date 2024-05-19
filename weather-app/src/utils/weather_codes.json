@@ -1,0 +1,282 @@
+{
+  "0": {
+    "day": {
+      "description": "Sunny",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_01anim.svg"
+    },
+    "night": {
+      "description": "Clear",
+      "image": "http://openweathermap.org/img/wn/01n@2x.png"
+    }
+  },
+  "1": {
+    "day": {
+      "description": "Mainly Sunny",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_01anim.svg"
+    },
+    "night": {
+      "description": "Mainly Clear",
+      "image": "http://openweathermap.org/img/wn/01n@2x.png"
+    }
+  },
+  "2": {
+    "day": {
+      "description": "Partly Cloudy",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_02anim.svg"
+    },
+    "night": {
+      "description": "Partly Cloudy",
+      "image": "http://openweathermap.org/img/wn/02n@2x.png"
+    }
+  },
+  "3": {
+    "day": {
+      "description": "Cloudy",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_03anim.svg"
+    },
+    "night": {
+      "description": "Cloudy",
+      "image": "http://openweathermap.org/img/wn/03n@2x.png"
+    }
+  },
+  "45": {
+    "day": {
+      "description": "Foggy",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_16anim.svg"
+    },
+    "night": {
+      "description": "Foggy",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_16anim.svg"
+    }
+  },
+  "48": {
+    "day": {
+      "description": "Rime Fog",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_17anim.svg"
+    },
+    "night": {
+      "description": "Rime Fog",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_16anim.svg"
+    }
+  },
+  "51": {
+    "day": {
+      "description": "Light Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_10anim.svg"
+    },
+    "night": {
+      "description": "Light Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_10anim.svg"
+    }
+  },
+  "53": {
+    "day": {
+      "description": "Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_13anim.svg"
+    },
+    "night": {
+      "description": "Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_13anim.svg"
+    }
+  },
+  "55": {
+    "day": {
+      "description": "Heavy Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_12anim.svg"
+    },
+    "night": {
+      "description": "Heavy Drizzle",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_12anim.svg"
+    }
+  },
+  "56": {
+    "day": {
+      "description": "Light Freezing Drizzle",
+      "image": "http://openweathermap.org/img/wn/09d@2x.png"
+    },
+    "night": {
+      "description": "Light Freezing Drizzle",
+      "image": "http://openweathermap.org/img/wn/09n@2x.png"
+    }
+  },
+  "57": {
+    "day": {
+      "description": "Freezing Drizzle",
+      "image": "http://openweathermap.org/img/wn/09d@2x.png"
+    },
+    "night": {
+      "description": "Freezing Drizzle",
+      "image": "http://openweathermap.org/img/wn/09n@2x.png"
+    }
+  },
+  "61": {
+    "day": {
+      "description": "Light Rain",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_07anim.svg"
+    },
+    "night": {
+      "description": "Light Rain",
+      "image": "http://openweathermap.org/img/wn/10n@2x.png"
+    }
+  },
+  "63": {
+    "day": {
+      "description": "Rain",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_08anim.svg"
+    },
+    "night": {
+      "description": "Rain",
+      "image": "http://openweathermap.org/img/wn/10n@2x.png"
+    }
+  },
+  "65": {
+    "day": {
+      "description": "Heavy Rain",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_09anim.svg"
+    },
+    "night": {
+      "description": "Heavy Rain",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_09anim.svg"
+    }
+  },
+  "66": {
+    "day": {
+      "description": "Light Freezing Rain",
+      "image": "http://openweathermap.org/img/wn/10d@2x.png"
+    },
+    "night": {
+      "description": "Light Freezing Rain",
+      "image": "http://openweathermap.org/img/wn/10n@2x.png"
+    }
+  },
+  "67": {
+    "day": {
+      "description": "Freezing Rain",
+      "image": "http://openweathermap.org/img/wn/10d@2x.png"
+    },
+    "night": {
+      "description": "Freezing Rain",
+      "image": "http://openweathermap.org/img/wn/10n@2x.png"
+    }
+  },
+  "71": {
+    "day": {
+      "description": "Light Snow",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_18anim.svg"
+    },
+    "night": {
+      "description": "Light Snow",
+      "image": "http://openweathermap.org/img/wn/13n@2x.png"
+    }
+  },
+  "73": {
+    "day": {
+      "description": "Snow",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_18anim.svg"
+    },
+    "night": {
+      "description": "Snow",
+      "image": "http://openweathermap.org/img/wn/13n@2x.png"
+    }
+  },
+  "75": {
+    "day": {
+      "description": "Heavy Snow",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_18anim.svg"
+    },
+    "night": {
+      "description": "Heavy Snow",
+      "image": "http://openweathermap.org/img/wn/13n@2x.png"
+    }
+  },
+  "77": {
+    "day": {
+      "description": "Snow Grains",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_18anim.svg"
+    },
+    "night": {
+      "description": "Snow Grains",
+      "image": "http://openweathermap.org/img/wn/13n@2x.png"
+    }
+  },
+  "80": {
+    "day": {
+      "description": "Light Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_07anim.svg"
+    },
+    "night": {
+      "description": "Light Showers",
+      "image": "http://openweathermap.org/img/wn/09n@2x.png"
+    }
+  },
+  "81": {
+    "day": {
+      "description": "Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_08anim.svg"
+    },
+    "night": {
+      "description": "Showers",
+      "image": "http://openweathermap.org/img/wn/09n@2x.png"
+    }
+  },
+  "82": {
+    "day": {
+      "description": "Heavy Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_09anim.svg"
+    },
+    "night": {
+      "description": "Heavy Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_09anim.svg"
+    }
+  },
+  "85": {
+    "day": {
+      "description": "Light Snow Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_30anim.svg"
+    },
+    "night": {
+      "description": "Light Snow Showers",
+      "image": "http://openweathermap.org/img/wn/13n@2x.png"
+    }
+  },
+  "86": {
+    "day": {
+      "description": "Snow Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_29anim.svg"
+    },
+    "night": {
+      "description": "Snow Showers",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_29anim.svg"
+    }
+  },
+  "95": {
+    "day": {
+      "description": "Thunderstorm",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_19anim.svg"
+    },
+    "night": {
+      "description": "Thunderstorm",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_19anim.svg"
+    }
+  },
+  "96": {
+    "day": {
+      "description": "Light Thunderstorms With Hail",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_19anim.svg"
+    },
+    "night": {
+      "description": "Light Thunderstorms With Hail",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_19anim.svg"
+    }
+  },
+  "99": {
+    "day": {
+      "description": "Thunderstorm With Hail",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_20anim.svg"
+    },
+    "night": {
+      "description": "Thunderstorm With Hail",
+      "image": "https://www.ipma.pt/bin/icons/svg/weather/w_ic_d_23anim.svg"
+    }
+  }
+}

@@ -36,6 +36,26 @@ rails server
 ```
 
 ### API endpoint
+`http://localhost:3000/weather?latitude=`_value_`&longitude=`_value_`&start_date=`_value_`&end_date=`_value_
+
+## Frontend
+React frontend lives on folder `weather-app`.
+
+### Deployment instructions
 ```
-http://localhost:3000/weather?latitude=<value>&longitude=<value>&start_date=<value>&end_date=<value>
+cd weather-app
+npm i
 ```
+
+Run the app in the development mode.
+```
+npm start
+```
+
+Build the app for production to the `build` folder.
+```
+npm run build
+```
+
+### API endpoint
+Open [http://localhost:3115](http://localhost:3115) to view it in your browser.

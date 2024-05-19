@@ -1,3 +1,5 @@
+.DS_Store
+
 weather-service/.bundle
 weather-service/.env*
 weather-service/log/*
@@ -11,3 +13,17 @@ weather-service/config/master.key
 !weather-service/tmp/pids/.keep
 !weather-service/storage/.keep
 !weather-service/tmp/storage/.keep
+
+weather-app/node_modules
+weather-app/.pnp
+weather-app/.pnp.js
+weather-app/coverage
+weather-app/build
+weather-app/.DS_Store
+weather-app/.env.local
+weather-app/.env.development.local
+weather-app/.env.test.local
+weather-app/.env.production.local
+weather-app/npm-debug.log*
+weather-app/yarn-debug.log*
+weather-app/yarn-error.log*

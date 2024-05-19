@@ -1,0 +1,48 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-radio-container {
+  margin: 10px 0;
+}
+
+.input-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.chart {
+  margin: 10px 0;
+  height: 470px;
+  min-width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  margin: 10px 0;
+  height: 470px;
+  width: 80%;
+}
+
+@media (max-width: 796px) {
+  .table {
+    width: 80%;
+  }
+
+  .input-radio {
+    font-size: 12px;
+  }
+
+  .chart {
+    margin: 10px 0;
+    height: 250px;
+    max-width: 100%;
+  }
+}
