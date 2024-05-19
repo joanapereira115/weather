@@ -61,6 +61,30 @@ svg.no-data-icon {
   stroke: rgb(250, 82, 82);
 }
 
+.loader {
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #00c3ff 94%, #0000),
+    radial-gradient(farthest-side, #fcde17 94%, #0000), #00c3ff;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: filler-anim 1.5s infinite;
+}
+@keyframes filler-anim {
+  0% {
+    background-size: 0 0, 0 0;
+  }
+  30%,
+  50% {
+    background-size: 0 0, 120% 120%;
+  }
+  80%,
+  100% {
+    background-size: 120% 120%, 120% 120%;
+  }
+}
+
 /* Buttons */
 
 button {

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-
 import "./Searchbar.css";
-import { searchCities, getWeatherInfo, validate_input } from "../utils/logic";
+import { searchCities, validate_input } from "../utils/logic";
 import Input from "./Input";
 
 const today = new Date();
@@ -10,11 +9,7 @@ const yesterday = new Date(today);
 yesterday.setDate(today.getDate() - 1);
 const yesterdayDate = yesterday.toISOString().split("T")[0];
 
-export default function Searchbar({
-  setWeatherInfo,
-  setSelectedDay,
-  setError,
-}) {
+export default function Searchbar({ getWeatherInfo, setSelectedDay }) {
   const [location, setLocation] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
@@ -23,14 +18,13 @@ export default function Searchbar({
   const [showCities, setShowCities] = useState(false);
   const [cities, setCities] = useState([]);
 
-  let { disabled, errorMessage } = validate_input(
+  let disabled = validate_input(
     latitude,
     longitude,
     startDate,
     endDate,
     yesterdayDate
   );
-  console.log(errorMessage); /* if we want to give some feedbak to the user */
 
   useEffect(() => {
     const fetchCitiesData = async (search) => {
@@ -50,13 +44,9 @@ export default function Searchbar({
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    try {
-      setWeatherInfo(
-        await getWeatherInfo(latitude, longitude, startDate, endDate)
-      );
-    } catch (error) {
-      setError("An error occurred while trying to fetch the data!");
-    }
+    await getWeatherInfo(
+      `http://localhost:3000/weather?latitude=${latitude}&longitude=${longitude}&start_date=${startDate}&end_date=${endDate}`
+    );
     setSelectedDay("");
   };
 

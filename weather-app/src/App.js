@@ -3,12 +3,18 @@ import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 import Searchbar from "./components/Searchbar";
 import DayInfo from "./components/DayInfo";
 import HourInfo from "./components/HourInfo";
+import { useHttp } from "./hooks/use-http";
 
 function App() {
   const [selectedDay, setSelectedDay] = useState("");
-  const [weatherInfo, setWeatherInfo] = useState(null);
-  const [errorMessage, setErrorMessage] = useState("No data available!");
   let hoursInfo = [];
+
+  const {
+    sendRequest: getWeatherInfo,
+    data: weatherInfo,
+    isLoading,
+    error,
+  } = useHttp();
 
   if (weatherInfo && !selectedDay) {
     setSelectedDay(weatherInfo["daily"][0]["date"]);
@@ -21,12 +27,11 @@ function App() {
   return (
     <div className="weather-app">
       <Searchbar
-        setWeatherInfo={setWeatherInfo}
+        getWeatherInfo={getWeatherInfo}
         setSelectedDay={setSelectedDay}
-        setError={setErrorMessage}
       />
       <hr></hr>
-      {weatherInfo ? (
+      {weatherInfo && (
         <>
           <div className="daily-info-container">
             {weatherInfo?.daily?.map((day) => (
@@ -43,10 +48,16 @@ function App() {
             <HourInfo hoursInfo={hoursInfo} />
           </div>
         </>
-      ) : (
+      )}
+      {error && (
         <div className="no-data">
           <ExclamationCircleIcon className="no-data-icon" />
-          <p>{errorMessage}</p>
+          <p>{error}</p>
+        </div>
+      )}
+      {isLoading && (
+        <div className="no-data">
+          <div class="loader"></div>
         </div>
       )}
       <hr></hr>

@@ -10,45 +10,37 @@ const searchCities = async (search) => {
   }
 };
 
-const getWeatherInfo = async (lat, lng, start, end) => {
-  try {
-    const response = await fetch(
-      `http://localhost:3000/weather?latitude=${lat}&longitude=${lng}&start_date=${start}&end_date=${end}`
-    );
-    console.log(response);
-    const weather = await response.json();
-    return weather;
-  } catch (error) {
-    throw error;
-  }
-};
-
 function getWindDirection(degrees) {
   const wind_directions = require("./wind_directions.json");
   let wind_i = Math.round(+degrees / 22.5) + 1;
   return wind_directions[wind_i];
 }
 
-function validate_input(latitude, longitude, startDate, endDate, yesterdayDate) {
+function validate_input(
+  latitude,
+  longitude,
+  startDate,
+  endDate,
+  yesterdayDate
+) {
   if (!latitude || !longitude) {
-    return { disabled: true, errorMessage: "Please, select a location!" };
+    /* errorMessage = "Please, select a location!"; */
+    return true;
   }
   if (!startDate || !endDate) {
-    return { disabled: true, errorMessage: "Mandatory date range!" };
+    /* errorMessage = "Mandatory date range!"; */
+    return true;
   }
   if (endDate < startDate) {
-    return {
-      disabled: true,
-      errorMessage: "The start date can't be higher that the end date!",
-    };
+    /* errorMessage = "The start date can't be higher that the end date!"; */
+    return true;
   }
   if (endDate > yesterdayDate || startDate > yesterdayDate) {
-    return {
-      disabled: true,
-      errorMessage: "The range date must be in the past!",
-    };
+    /* errorMessage = "The range date must be in the past!"; */
+    return true;
   }
-  return { disabled: false, errorMessage: "" };
+  /* errorMessage = ""; */
+  return false;
 }
 
-export { searchCities, getWeatherInfo, getWindDirection, validate_input };
+export { searchCities, getWindDirection, validate_input };
