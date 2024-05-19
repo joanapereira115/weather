@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: 1.5
+  longitude: 1.5
+  date: 2024-05-17
+  weather_code: 1
+  max_temp: 1.5
+  min_temp: 1.5
+  sunrise: 2024-05-17 10:43:09
+  sunset: 2024-05-17 10:43:09
+  rain: 1.5
+  snow: 1.5
+  wind_speed: 1.5
+  wind_direction: 1
+
+two:
+  latitude: 1.5
+  longitude: 1.5
+  date: 2024-05-17
+  weather_code: 1
+  max_temp: 1.5
+  min_temp: 1.5
+  sunrise: 2024-05-17 10:43:09
+  sunset: 2024-05-17 10:43:09
+  rain: 1.5
+  snow: 1.5
+  wind_speed: 1.5
+  wind_direction: 1
