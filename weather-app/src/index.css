@@ -38,7 +38,7 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, #00c3ff, #fcde17);
   width: 100%;
-  margin-left: -16px;
+  margin-left: -8px;
 }
 
 .no-data {
