@@ -21,7 +21,7 @@ class WeatherController < ApplicationController
         date_array = date_range.to_a.map(&:to_s)
 
         # retrieve and clean the data from the database
-        db_daily = DailyWeather.where({latitude: latitude, longitude:longitude}).where(date:date_range)
+        db_daily = DailyWeather.where({latitude: latitude, longitude:longitude, date:date_range})
         db_daily_data = db_daily.all
         db_hourly = HourlyWeather.where({latitude: latitude, longitude:longitude}).where(date:date_range)
         db_hourly_data = db_hourly.all

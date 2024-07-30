@@ -59,3 +59,13 @@ npm run build
 
 ### API endpoint
 Open [http://localhost:3115](http://localhost:3115) to view it in your browser.
+
+## Prints
+
+![Home](prints/1.png)
+
+![Search](prints/2.png)
+
+![Temperature](prints/3.png)
+
+![Precipitation](prints/4.png)
